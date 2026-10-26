@@ -1,0 +1,63 @@
+WEB DE NURIA HERNÁEZ — ASESORÍA DE IMAGEN
+=========================================
+
+Este archivo contiene la versión de tu web con el diseño blanco, detalles
+granates y rosa empolvado, el logotipo de tus tarjetas, los cuatro servicios
+y los enlaces de contacto.
+
+1. CÓMO ABRIR LA WEB EN TU ORDENADOR
+
+   a) Descomprime el archivo ZIP en una carpeta.
+   b) Abre esa carpeta.
+   c) Haz doble clic en el archivo index.html.
+
+   La web se abrirá en tu navegador habitual. No necesitas instalar
+   programas, crear cuentas ni contratar un servidor para verla localmente.
+
+2. QUÉ CONTIENE CADA ARCHIVO
+
+   index.html     Estructura y textos de la página.
+   style.css      Colores, tipografías y diseño adaptable a móvil.
+   script.js      Funcionamiento del menú móvil y año del pie de página.
+   assets/        Fotografías y reproducciones de las tarjetas de visita.
+
+   Mantén todos los archivos y la carpeta assets juntos para que las
+   fotografías, el logotipo y los estilos se vean correctamente.
+
+3. PARA INSTALARLA EN TU DOMINIO O ALOJAMIENTO
+
+   Si dispones de un servicio de hosting para www.nuriahernaez.es, sube
+   el CONTENIDO de esta carpeta (index.html, style.css, script.js y assets/)
+   a la carpeta pública del alojamiento, que suele llamarse public_html,
+   www o htdocs. No es necesario subir el ZIP sin descomprimir.
+
+   Este paquete es una web estática: no requiere base de datos ni servidor
+   de aplicaciones. Si tu proveedor usa WordPress, la instalación sigue un
+   procedimiento diferente y no debes reemplazar los archivos existentes
+   sin revisar primero cómo está configurado tu alojamiento.
+
+4. DATOS DE CONTACTO YA INCLUIDOS
+
+   WhatsApp: 618 237 613
+   Correo:   nuria.hernaez@gmail.com
+   Instagram: @nuriahernaez_asesoriaimagen
+
+5. NOTAS IMPORTANTES
+
+   - Los botones de WhatsApp, correo e Instagram abren esos servicios.
+   - Las fotografías editoriales son ilustrativas y se pueden sustituir.
+   - Las tipografías se cargan desde Google Fonts cuando hay Internet;
+     sin conexión se muestran tipografías alternativas del sistema.
+   - El sitio no tiene formulario ni sistema propio de reservas: las
+     consultas llegan directamente por los enlaces de contacto.
+
+6. OPCIONAL: ABRIRLA EN UN SERVIDOR LOCAL
+
+   Si tienes Python instalado, abre una terminal dentro de esta carpeta:
+
+      Windows: py -m http.server 8000
+      macOS/Linux: python3 -m http.server 8000
+
+   Después visita http://localhost:8000 en tu navegador.
+
+¡Disfruta de tu web!
