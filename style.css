@@ -233,3 +233,71 @@ p { line-height: 1.85; }
   html { scroll-behavior: auto; }
   *, *::before, *::after { transition-duration: .01ms !important; }
 }
+.service-image {
+    height: clamp(250px, 27vw, 410px);
+    position: relative;
+    overflow: hidden;
+    background: #edd3cc;
+}
+.colour-lab-art {
+    background: #dcb2b3;
+    isolation: isolate;
+}
+.swatch {
+    display: block;
+    position: absolute;
+    width: 36%;
+    height: 73%;
+    top: 20%;
+    border-radius: 110px 110px 8px 8px;
+    box-shadow: 7px 9px 13px rgba(71, 36, 44, .14);
+    transform-origin: 50% 90%;
+    left: 34%;
+}
+.swatch-a {
+    background: #7b122f;
+    transform: rotate(-36deg);
+}
+.swatch-b {
+    background: #d3a38e;
+    transform: rotate(-12deg);
+}
+.swatch-c {
+    background: #b4bd9a;
+    transform: rotate(12deg);
+}
+.swatch-d {
+    background: #ecd9bd;
+    transform: rotate(36deg);
+}
+.colour-lab-lettering {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-family: var(--serif);
+    font-size: clamp(61px,6vw,110px);
+    line-height: .76;
+    color: #fff8ee;
+    text-align: center;
+    text-shadow: 0 2px 20px rgba(60,15,27,.12);
+    white-space: nowrap
+}
+.colour-lab-lettering i {
+    font-style: italic
+}
+.colour-lab-lettering small {
+    display: block;
+    font-family: var(--sans);
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: .18em;
+    font-style: normal;
+    margin-top: 28px
+}
+@media (max-width: 650px) {
+    .colour-lab-lettering {
+        font-size: 70;
+    }
+}
