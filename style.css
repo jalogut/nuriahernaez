@@ -49,9 +49,9 @@ p { line-height: 1.85; }
 .hero-triptych { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 13px; width: min(100% - 34px, 1460px); margin: 19px auto 0; }
 .hero-photo { height: clamp(360px, 38vw, 570px); overflow: hidden; background: #f4efeb; }
 .hero-photo img { width: 100%; height: 100%; object-fit: cover; filter: saturate(.75) brightness(1.07); }
-.hero-photo-left img { object-position: 63% center; }
-.hero-photo-center img { object-position: 70% center; }
-.hero-photo-right img { object-position: 35% center; }
+.hero-photo-left img { object-position: 95% center; }
+.hero-photo-center img { object-position: 85% center; }
+.hero-photo-right img { object-position: 80% center; }
 .hero-message { padding-block: 105px 112px; text-align: center; }
 .hero-message h1 { color: var(--wine); font-family: var(--serif); font-size: clamp(57px, 6.6vw, 92px); letter-spacing: -.055em; font-weight: 400; line-height: 1.14; margin: 19px 0 25px; }
 .hero-message h1 em { font-weight: 400; }
@@ -179,9 +179,9 @@ p { line-height: 1.85; }
   .main-nav a::after { display: none; }
   .hero-triptych { width: 100%; gap: 5px; margin-top: 0; }
   .hero-photo { height: 320px; }
-  .hero-photo-left img { object-position: 65% center; }
+  .hero-photo-left img { object-position: 79% center; }
   .hero-photo-center img { object-position: 73% center; }
-  .hero-photo-right img { object-position: 27% center; }
+  .hero-photo-right img { object-position: 80% center; }
   .hero-message { padding-block: 75px 84px; }
   .hero-message h1 { font-size: clamp(52px, 10vw, 72px); }
   .hero-message p { font-size: 13px; }
