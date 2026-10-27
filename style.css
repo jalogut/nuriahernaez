@@ -1,11 +1,5 @@
-@font-face {
-  font-family: 'Nuria Logo';
-  src: url('./fonts/nuria-hernaez-logo.ttf') format('truetype');
-  font-weight: 400;
-  font-display: swap;
-}
 :root {
-  --rojo-original-logo: #8f151c;
+  --logo-color: #80001f;
   --wine: #850d2e;
   --rose: #e9bbb9;
   --ink: #353234;
@@ -38,12 +32,12 @@ p { line-height: 1.85; }
 .inline-link { display: inline-flex; align-items: center; gap: 25px; padding-bottom: 9px; border-bottom: 1px solid var(--wine); color: var(--wine); font-size: 11px; letter-spacing: .13em; font-weight: 700; }
 .inline-link span { font-size: 16px; }
 
-/* The brand wordmark uses Nuria's supplied custom font. */
+/* Logotipo SVG original; cambia --logo-color para ajustar su color. */
 .site-header { background: white; position: relative; z-index: 30; border-bottom: 1px solid var(--line); }
 .masthead { min-height: 147px; display: flex; justify-content: center; align-items: center; position: relative; }
-.site-logo { display: flex; flex-direction: column; align-items: center; width: max-content; max-width: 100%; color: var(--rojo-original-logo); text-align: center; }
-.logo-name { display: block; font-family: 'Nuria Logo', Georgia, serif; font-size: clamp(49px, 5.7vw, 80px); font-weight: 400; line-height: 1.16; font-variant-ligatures: common-ligatures; font-feature-settings: 'liga' 1; word-spacing: -.19em; white-space: nowrap; }
-.logo-descriptor { display: block; font: 400 12px/1.5 Arial, sans-serif; letter-spacing: .37em; padding-left: .37em; margin-top: 2px; }
+.site-logo { display: block; width: 470px; max-width: 80vw; }
+.logo-svg { display: block; width: 100%; height: auto; aspect-ratio: 10800 / 2550; color: var(--logo-color); fill: currentColor; }
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
 .main-nav { min-height: 62px; display: flex; align-items: center; justify-content: center; gap: clamp(35px, 5vw, 86px); border-top: 1px solid var(--line); }
 .main-nav a { color: #3f3b3b; font-size: 11px; font-weight: 500; letter-spacing: .11em; position: relative; padding-block: 20px; white-space: nowrap; }
 .main-nav a::after { content: ''; position: absolute; height: 1px; background: var(--wine); left: 0; right: 100%; bottom: 13px; transition: right .22s; }
@@ -101,7 +95,7 @@ p { line-height: 1.85; }
 .feature-grid-reverse { grid-template-columns: 1fr 49%; gap: 9%; }
 .feature-image { height: 540px; overflow: hidden; background: #f5f1ee; }
 .feature-image img { width: 100%; height: 100%; object-fit: cover; object-position: center; }
-.feature-lab .feature-image img { object-position: 35% center; }
+.feature-lab .feature-image img { object-position: 30% center; }
 .wardrobe-image img { object-position: 85% center; }
 .feature-copy { max-width: 550px; }
 .feature-copy h2 { font-family: var(--serif); font-size: clamp(52px, 5.1vw, 76px); font-weight: 400; letter-spacing: -.05em; line-height: 1.18; color: var(--wine); margin: 20px 0 28px; }
@@ -152,8 +146,7 @@ p { line-height: 1.85; }
 
 .footer { border-top: 1px solid var(--line); background: white; }
 .footer-main { min-height: 175px; display: flex; justify-content: space-between; align-items: center; gap: 30px; }
-.footer-logo .logo-name { font-size: 52px; }
-.footer-logo .logo-descriptor { font-size: 9px; }
+.footer-logo { width: 350px; }
 .footer-nav { display: flex; gap: 29px; font-size: 11px; color: #514c4e; }
 .footer-nav a:hover { color: var(--wine); }
 .footer-bottom { border-top: 1px solid var(--line); padding: 24px 0 29px; display: flex; justify-content: space-between; gap: 20px; color: #858081; font-size: 10px; letter-spacing: .06em; }
@@ -178,9 +171,7 @@ p { line-height: 1.85; }
   .container { width: min(100% - 40px, 550px); }
   .section-space { padding-block: 77px; }
   .masthead { min-height: 105px; justify-content: flex-start; }
-  .site-logo { max-width: calc(100vw - 95px); }
-  .logo-name { font-size: clamp(34px, 6.4vw, 52px); }
-  .logo-descriptor { font-size: 9px; letter-spacing: .23em; padding-left: .23em; }
+  .site-logo { width: 308px; max-width: calc(100vw - 95px); }
   .nav-toggle { display: block; position: absolute; right: 0; top: 34px; width: 40px; height: 39px; border: 0; background: white; padding: 8px; cursor: pointer; }
   .nav-toggle span { display: block; height: 1px; width: 100%; background: var(--wine); margin: 7px 0; }
   .main-nav { position: absolute; top: 105px; left: 0; right: 0; width: 100%; padding: 24px 20px 37px; background: white; border-top: 1px solid var(--line); display: flex; flex-direction: column; align-items: stretch; gap: 0; opacity: 0; visibility: hidden; transform: translateY(-7px); transition: opacity .2s, visibility .2s, transform .2s; box-shadow: 0 15px 25px #0000000d; }
@@ -224,16 +215,14 @@ p { line-height: 1.85; }
   .contact-links a, .contact-links a:first-child { padding: 23px 0; }
   .contact-links a + a { border-left: 0; border-top: 1px solid var(--line); }
   .footer-main { flex-direction: column; align-items: center; padding-block: 37px; gap: 26px; }
-  .footer-logo .logo-name { font-size: 49px; }
-  .footer-logo .logo-descriptor { font-size: 9px; }
+  .footer-logo { width: 300px; }
   .footer-nav { display: flex; flex-wrap: wrap; justify-content: center; gap: 15px 23px; font-size: 10px; }
   .footer-bottom { font-size: 9px; }
   .floating-whatsapp { width: 48px; height: 48px; right: 13px; bottom: 14px; }
 }
 @media (max-width: 420px) {
   .masthead { min-height: 93px; }
-  .logo-name { font-size: clamp(px, 8vw, 36px); }
-  .footer-logo .logo-name { font-size: 37px; }
+  .site-logo { width: 260px; }
   .nav-toggle { top: 27px; }
   .main-nav { top: 93px; }
   .hero-photo { height: 270px; }
