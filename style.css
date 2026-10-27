@@ -59,12 +59,14 @@ p { line-height: 1.85; }
 
 .intro { padding-block: 118px 120px; text-align: center; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
 .intro-line { width: 45px; height: 1px; background: var(--rose); margin: 0 auto 29px; }
-.intro h3 { font-family: var(--serif); color: var(--wine); font-size: clamp(44px, 4.3vw, 64px); font-weight: 400; letter-spacing: -.045em; line-height: 1.28; margin: 24px auto 22px; }
+.intro h3, .section-intro h3 { font-family: var(--serif); color: var(--wine); font-weight: 400; letter-spacing: -.045em; line-height: 1.28; margin: 24px auto 22px; }
+.intro h3 { font-size: clamp(44px, 4.3vw, 64px); }
 .intro h3 em { font-weight: 400; }
 .intro p { color: var(--muted); font-size: 14px; line-height: 2; max-width: 650px; margin: auto; }
 
 .section-intro { text-align: center; max-width: 770px; margin: 0 auto 75px; }
-.section-intro h3 { font-family: var(--sans); font-size: clamp(31px, 3vw, 41px); font-weight: 300; color: var(--ink); letter-spacing: .015em; line-height: 1.3; margin: 20px 0 22px; }
+/*.section-intro h3 { font-family: var(--sans); font-size: clamp(31px, 3vw, 41px); font-weight: 300; color: var(--ink); letter-spacing: .015em; line-height: 1.3; margin: 20px 0 22px; }*/
+.section-intro h3 { font-size: clamp(36px, 3.5vw, 50px); }
 .section-intro p { margin: auto; max-width: 540px; font-size: 14px; color: var(--muted); }
 .service-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 26px; }
 .service-card { min-width: 0; display: flex; flex-direction: column; align-items: flex-start; background: white; }
