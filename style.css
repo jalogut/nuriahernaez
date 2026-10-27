@@ -77,7 +77,7 @@ p { line-height: 1.85; }
 .arch-four { border-radius: 0 105px 0 0; }
 .arch-one img { object-position: 27% center; }
 .arch-two img { object-position: center center; }
-.arch-three img { object-position: 63% center; }
+.arch-three img { object-position: 73% center; }
 .arch-four img { object-position: 78% center; }
 .service-index { display: block; margin-top: 27px; color: #a99898; font-family: var(--serif); font-size: 17px; font-style: italic; }
 .service-card h3 { font-size: 15px; letter-spacing: .09em; font-weight: 600; color: var(--wine); line-height: 1.45; margin: 9px 0 13px; min-height: 44px; }
