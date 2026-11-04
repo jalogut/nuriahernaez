@@ -84,7 +84,7 @@ p { line-height: 1.85; }
 .service-index { display: block; margin-top: 27px; color: #a99898; font-family: var(--serif); font-size: 17px; font-style: italic; }
 .service-card h4 { font-size: 15px; letter-spacing: .09em; font-weight: 600; color: var(--wine); line-height: 1.45; margin: 9px 0 13px; min-height: 44px; }
 .service-card p { color: var(--muted); font-size: 12px; line-height: 1.9; margin-bottom: 22px; }
-.service-link { display: flex; align-items: center; justify-content: space-between; gap: 15px; color: var(--wine); font-size: 10px; font-weight: 700; letter-spacing: .12em; width: 100%; border-top: 1px solid var(--line); padding-top: 15px; margin-top: auto; }
+.service-link { display: flex; align-items: center; /*justify-content: space-between;*/ gap: 15px; color: var(--wine); font-size: 10px; font-weight: 700; letter-spacing: .12em; width: 100%; border-top: 1px solid var(--line); padding-top: 15px; margin-top: auto; }
 .service-link span { font-size: 17px; }
 
 .editorial-quote { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); text-align: center; padding-block: 105px; }
