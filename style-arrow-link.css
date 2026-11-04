@@ -1,0 +1,36 @@
+/*
+Personalización
+- Tamaño: modifica width y height.
+- Separación: modifica gap: 8px.
+- Color: la flecha hereda automáticamente el color del texto.
+- Grosor: modifica stroke-width="1.5" dentro del SVG.
+*/
+
+.service-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.button { 
+  gap: 10px;
+}
+
+.arrow-icon {
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  flex-shrink: 0;
+  background-color: currentColor;
+
+  -webkit-mask: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"%3E%3Cpath d="M7 17L17 7M7 7h10v10"/%3E%3C/svg%3E') center / contain no-repeat;
+  mask: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"%3E%3Cpath d="M7 17L17 7M7 7h10v10"/%3E%3C/svg%3E') center / contain no-repeat;
+}
+
+.arrow-icon {
+  transition: transform 0.3s ease;
+}
+
+.service-link:hover .arrow-icon, .button:hover .arrow-icon {
+  transform: translate(3px, -3px);
+}
