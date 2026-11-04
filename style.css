@@ -140,7 +140,7 @@ p { line-height: 1.85; }
 .contact h3 em { font-weight: 400; }
 .contact > .container > p { font-size: 14px; color: var(--muted); max-width: 540px; margin: 0 auto 29px; }
 .contact-links { margin-top: 93px; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); text-align: left; }
-.contact-links a { display: flex; flex-direction: column; gap: 10px; padding: 27px 22px; min-width: 0; }
+.contact-links a, .contact-links span { display: flex; flex-direction: column; gap: 10px; padding: 27px 22px; min-width: 0; }
 .contact-links a + a { border-left: 1px solid var(--line); }
 .contact-links a:first-child { padding-left: 0; }
 .contact-links small { font-size: 10px; font-weight: 600; letter-spacing: .17em; color: var(--wine); }
