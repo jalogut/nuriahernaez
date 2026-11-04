@@ -97,7 +97,7 @@ p { line-height: 1.85; }
 .feature-image { height: 540px; overflow: hidden; background: #f5f1ee; }
 .feature-image img { width: 100%; height: 100%; object-fit: cover; object-position: center; }
 .colorimetria-image img { object-position: 77% center; }
-.colour-lab-image img { object-position: 35% center; }
+.colour-lab-image img { object-position: 37% center; }
 .asesoria-integral-image img { object-position: 100% center; }
 .wardrobe-image img { object-position: 85% center; }
 .feature-copy { max-width: 550px; }
