@@ -281,8 +281,8 @@ p { line-height: 1.85; }
     left: 50%;
     transform: translate(-50%,-50%);
     font-family: var(--serif);
-    font-size: clamp(61px,6vw,110px);
-    line-height: .76;
+    font-size: clamp(61px,6vw,90px);
+    line-height: .86;
     color: #fff8ee;
     text-align: center;
     text-shadow: 0 2px 20px rgba(60,15,27,.12);
