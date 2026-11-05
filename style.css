@@ -141,7 +141,7 @@ p { line-height: 1.85; }
 .contact > .container > p { font-size: 14px; color: var(--muted); max-width: 540px; margin: 0 auto 29px; }
 .contact-links { margin-top: 93px; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); text-align: left; }
 .contact-links a, .contact-links span { display: flex; flex-direction: column; gap: 10px; padding: 27px 22px; min-width: 0; }
-.contact-links a + a { border-left: 1px solid var(--line); }
+.contact-links a + a, .contact-links span + a { border-left: 1px solid var(--line); }
 .contact-links a:first-child { padding-left: 0; }
 .contact-links small { font-size: 10px; font-weight: 600; letter-spacing: .17em; color: var(--wine); }
 .contact-links strong { font-size: 13px; font-weight: 500; color: var(--ink); overflow-wrap: anywhere; }
@@ -215,8 +215,8 @@ p { line-height: 1.85; }
   .questions-grid { grid-template-columns: 1fr; gap: 28px; }
   .contact h3 { font-size: clamp(46px, 9vw, 69px); }
   .contact-links { grid-template-columns: 1fr; margin-top: 60px; }
-  .contact-links a, .contact-links a:first-child { padding: 23px 0; }
-  .contact-links a + a { border-left: 0; border-top: 1px solid var(--line); }
+  .contact-links a, .contact-links a:first-child, .contact-links span, .contact-links span:first-child { padding: 23px 0; }
+  .contact-links a + a, .contact-links span + a { border-left: 0; border-top: 1px solid var(--line); }
   .footer-main { flex-direction: column; align-items: center; padding-block: 37px; gap: 26px; }
   .footer-logo { width: 300px; }
   .footer-nav { display: flex; flex-wrap: wrap; justify-content: center; gap: 15px 23px; font-size: 10px; }
