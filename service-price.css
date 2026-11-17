@@ -1,0 +1,31 @@
+.service-action {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+  margin-top: 18px;
+}
+
+.feature-copy .service-action .button {
+  margin-top: 0;
+}
+
+.service-price {
+  font-family: var(--sans);
+  color: var(--wine);
+  font-size: 34px;
+  font-weight: 400;
+  letter-spacing: -.05em;
+  line-height: 1.18;
+  white-space: nowrap;
+}
+
+@media (max-width: 720px) {
+  .service-action {
+    gap: 16px;
+  }
+
+  .service-price {
+    font-size: 30px;
+  }
+}
